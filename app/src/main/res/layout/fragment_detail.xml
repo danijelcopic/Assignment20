@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_hotizontal_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:layout_marginTop="@dimen/activity_hotizontal_margin">
+
+
+    <!-- slika glumca -->
+    <ImageView
+        android:id="@+id/slika_glumac"
+        android:layout_width="match_parent"
+        android:layout_height="120sp" />
+
+
+    <!-- ime glumca -->
+    <TextView
+        android:id="@+id/ime_glumac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slika_glumac"
+        android:gravity="center|bottom"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+
+    <!-- datum rodjenja glumca -->
+    <TextView
+        android:id="@+id/rodjenje_glumac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ime_glumac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp"
+        android:textSize="11sp"
+        android:textStyle="italic" />
+
+    <!-- datum smrti glumca -->
+    <TextView
+        android:id="@+id/smrt_glumac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ime_glumac"
+        android:layout_toRightOf="@id/rodjenje_glumac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp"
+        android:textSize="11sp"
+        android:textStyle="italic" />
+
+
+    <!-- ocena -->
+    <TextView
+        android:id="@+id/ocena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smrt_glumac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4sp"
+        android:text="@string/ocena"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+
+    <!-- ocena glumca  -->
+    <TextView
+        android:id="@+id/ocena_glumac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ocena"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <!-- biografija -->
+    <TextView
+        android:id="@+id/biografija_glumac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ocena_glumac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12sp"
+        android:textColor="#000000"
+        android:text="@string/biografija"
+        android:textSize="12sp" />
+
+
+    <!-- biografija opis -->
+    <TextView
+        android:id="@+id/biografija_opis_glumac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/biografija_glumac"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp" />
+
+    <!--  filmovi -->
+    <TextView
+        android:id="@+id/filmovi_glumac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/biografija_opis_glumac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14sp"
+        android:textColor="#000000"
+        android:text="@string/filmovi"
+        android:textSize="12sp" />
+
+
+    <!-- lista filmova -->
+    <ListView
+        android:id="@+id/lista_filmova_glumac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filmovi_glumac" />
+
+
+
+</RelativeLayout>
+
+
+
