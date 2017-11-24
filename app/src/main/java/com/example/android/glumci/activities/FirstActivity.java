@@ -230,6 +230,11 @@ public class FirstActivity extends AppCompatActivity implements ListFragment.OnI
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 fragmentTransaction.commit();
+
+                getFragmentManager().beginTransaction().replace(R.id.fl_list, new ListaGlumacaFragment(),"List_Fragment3").addToBackStack(null).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
+
+
+
             }else if (position == 1) {
                 Intent settings = new Intent(FirstActivity.this, SettingsActivity.class);
                 startActivity(settings);
